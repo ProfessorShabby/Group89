@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Georgia Tech</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffffff;
+        }
+
+        /* Top-left header */
+        .header {
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .header img {
+            height: 45px;
+        }
+
+        .header-text {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* Center content */
+        .center {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Blinking text */
+        .blink {
+            font-size: 64px;
+            font-weight: bold;
+            color: red;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .group {
+            margin-top: 40px;
+            font-size: 14px;
+			font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top-left section -->
+    <div class="header">
+        <img src="B:\PUPB/Georgia_Tech_Yellow_Jackets_logo.svg" alt="Georgia Tech Logo">
+        <div class="header-text">Georgia Tech PUBP 6725 OCY/O01</div>
+    </div>
+
+    <!-- Center content -->
+    <div class="center">
+        <div class="blink">You are Phished</div>
+        <div class="group">Group 89</div>
+    </div>
+
+</body>
+</html>
